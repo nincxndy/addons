@@ -1,0 +1,25 @@
+
+{
+	"format_version" : 2,
+	"header" : 
+	{
+		"allow_random_seed" : false,
+		"base_game_version" : [ 1, 26, 10 ],
+		"description" : "",
+		"lock_template_options" : false,
+		"name" : "RHA (1)",
+		"platform_locked" : false,
+		"uuid" : "5d31f962-88c9-4ce3-b3c6-ccd9fba0b753",
+		"version" : [ 1, 0, 0 ]
+	},
+	"modules" : 
+	[
+		
+		{
+			"description" : "",
+			"type" : "world_template",
+			"uuid" : "40d4b9e4-cc30-4a3a-8843-148fb9df24f9",
+			"version" : [ 1, 0, 0 ]
+		}
+	]
+}
