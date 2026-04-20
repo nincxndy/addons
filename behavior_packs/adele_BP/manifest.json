@@ -1,0 +1,39 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Adele",
+        "description": "§l[Adele] [สร้างโดย Bright]\n§7Heaven Send ขอบคุณที่ใช้บริการ https://discord.gg/heavensend",
+        "uuid": "b6fbfe1a-7c6d-4c34-a698-a661446fd736",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            21,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "1636968a-e795-40d1-b88e-3a82bae44412",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "d17ed14f-6ec7-4fc7-935c-21a1378eaddc",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

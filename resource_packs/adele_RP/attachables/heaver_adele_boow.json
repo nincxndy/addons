@@ -1,0 +1,90 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "heaver:heaver_adele_boow",
+      "materials": {
+        "default": "armor"
+      },
+      "textures": {
+        "default": "textures/skin/heaver_adele_boow"
+      },
+      "geometry": {
+        "default": "geometry.adele_2pqs"
+      },
+      "scripts": {
+        "initialize": [
+          "v.hairYawPhysics = 0;",
+          "v.hairYawVel = 0;",
+          "v.prevHeadYaw = 0;",
+          "v.headPitch = 0;",
+          "v.pitchVel = 0;",
+          "v.BrightLastHead = query.head_y_rotation(0);",
+          "v.BrightSmoothHeadX = q.head_x_rotation(0);",
+          "v.BrightSmoothHeadY = q.head_y_rotation(0) - q.body_y_rotation;",
+          "v.BrightSmoothHeadZ = 0;",
+          "variable.p=0;",
+          "variable.Xt=0;",
+          "variable.pas=0;",
+          "variable.nine=9;"
+        ],
+        "pre_animation": [
+          "v.headYawDelta = query.head_y_rotation(0) - v.prevHeadYaw;",
+          "v.headYawDelta = v.headYawDelta > 180 ? v.headYawDelta - 360 : (v.headYawDelta < -180 ? v.headYawDelta + 360 : v.headYawDelta);",
+          "v.headYawDelta = math.clamp(v.headYawDelta, -8.0, 8.0);",
+          "v.hairYawVel = v.hairYawVel + (v.headYawDelta * 0.018);",
+          "v.hairYawVel = v.hairYawVel - (v.hairYawPhysics * 0.015);",
+          "v.hairYawVel = v.hairYawVel * 0.88;",
+          "v.hairYawPhysics = v.hairYawPhysics + v.hairYawVel;",
+          "v.hairYawPhysics = math.clamp(v.hairYawPhysics, -4, 4);",
+          "v.pitchDelta = query.target_x_rotation - v.headPitch;",
+          "v.pitchVel = v.pitchVel + (v.pitchDelta * 0.08);",
+          "v.pitchVel = v.pitchVel * 0.85;",
+          "v.headPitch = v.headPitch + v.pitchVel;",
+          "v.prevHeadYaw = query.head_y_rotation(0);",
+          "v.BrightRawHead = query.head_y_rotation(0);",
+          "v.BrightLastHead = v.BrightRawHead;",
+          "v.BrightTargetSmoothHeadX = q.head_x_rotation(0);",
+          "v.BrightTargetSmoothHeadY = q.head_y_rotation(0) - q.body_y_rotation;",
+          "v.BrightSmoothDeltaX = v.BrightTargetSmoothHeadX - v.BrightSmoothHeadX;",
+          "v.BrightSmoothDeltaY = v.BrightTargetSmoothHeadY - v.BrightSmoothHeadY;",
+          "v.BrightSmoothDeltaY = v.BrightSmoothDeltaY - math.floor((v.BrightSmoothDeltaY + 180) / 360) * 360;",
+          "v.BrightSmoothHeadX = v.BrightSmoothHeadX + v.BrightSmoothDeltaX / 25;",
+          "v.BrightSmoothHeadY = v.BrightSmoothHeadY + v.BrightSmoothDeltaY / 25;",
+          "v.BrightSmoothHeadY = v.BrightSmoothHeadY - math.floor((v.BrightSmoothHeadY + 180) / 360) * 360;",
+          "v.BrightSmoothHeadZ = v.BrightSmoothHeadY * 0.05;",
+          "v.BrightSmoothHeadX = math.clamp(v.BrightSmoothHeadX, -30, 30);",
+          "v.BrightSmoothHeadY = math.clamp(v.BrightSmoothHeadY, -30, 30);",
+          "variable.center=query.head_y_rotation(0)-variable.p;",
+          "variable.center>90?{variable.center=variable.center-360;};",
+          "variable.center<-90?{variable.center=variable.center+360;};",
+          "variable.Xt=(variable.Xt-(math.clamp(variable.center,-4.5,4.5)*0.02)-(variable.pas*0.08))*0.75;",
+          "variable.pas=variable.pas+variable.Xt;",
+          "variable.p=query.head_y_rotation(0);",
+          "variable.z=math.clamp(variable.pas,-4.5,4.5);",
+          "variable.rot=-query.target_y_rotation/variable.nine;"
+        ],
+        "animate": [
+          "main",
+          "Bright_head_smooth",
+          "hair_black_wave",
+          "hair_black_yaw",
+          "Bright_head_rotation"
+        ]
+      },
+      "animations": {
+        "main": "animation.adele_2pqs.new",
+        "hair_black_wave": "animation.hair_black.wave_physics",
+        "hair_black_yaw": "animation.hair_black.yaw_physics",
+        "Bright_head_smooth": "animation.Bright.head.smooth",
+        "Bright_head_rotation": "animation.Bright.head.rotation"
+      },
+      "render_controllers": [
+        "controller.render.armor"
+      ],
+      "item": {
+        "heaver:heaver_adele_boow": "q.owner_identifier == 'minecraft:player'"
+      }
+    }
+  }
+}

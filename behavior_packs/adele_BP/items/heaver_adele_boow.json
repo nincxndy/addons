@@ -1,0 +1,22 @@
+{
+    "format_version": "1.21.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "heaver:heaver_adele_boow",
+            "menu_category": {
+                "category": "equipment",
+                "group": "itemGroup.name.helmet"
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:icon": "heaver_adele_boow",
+            "minecraft:display_name": {
+                "value": "§b§lAdele"
+            },
+            "minecraft:wearable": {
+                "slot": "slot.armor.head"
+            }
+        }
+    }
+}

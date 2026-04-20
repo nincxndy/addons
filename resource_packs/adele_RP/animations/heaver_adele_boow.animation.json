@@ -1,0 +1,444 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.adele_2pqs.new": {
+      "loop": true,
+      "animation_length": 2.5,
+      "bones": {
+        "eye": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.5": [
+              0,
+              0,
+              0
+            ],
+            "0.9167": [
+              0,
+              0,
+              0
+            ],
+            "1.3333": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.5": [
+              0,
+              0,
+              0
+            ],
+            "0.9167": [
+              0,
+              -0.8,
+              0
+            ],
+            "1.3333": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": {
+            "0.0": [
+              1,
+              1,
+              1
+            ],
+            "0.5": [
+              1,
+              1,
+              1
+            ],
+            "0.9167": [
+              1,
+              0.71,
+              1
+            ],
+            "1.3333": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "eyex2": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.5": [
+              0,
+              0,
+              0
+            ],
+            "0.9167": [
+              0,
+              0,
+              0
+            ],
+            "1.3333": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.0": [
+              0,
+              0.3,
+              0
+            ],
+            "0.5": [
+              0,
+              0.3,
+              0
+            ],
+            "0.9167": [
+              0,
+              0,
+              0
+            ],
+            "1.3333": [
+              0,
+              0.3,
+              0
+            ]
+          },
+          "scale": {
+            "0.0": [
+              1,
+              0.08,
+              1
+            ],
+            "0.5": [
+              1,
+              0.08,
+              1
+            ],
+            "0.9167": [
+              1,
+              1,
+              1
+            ],
+            "1.3333": [
+              1,
+              0.08,
+              1
+            ]
+          }
+        },
+        "eye2": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.5": [
+              0,
+              0,
+              0
+            ],
+            "0.9167": [
+              0,
+              0,
+              0
+            ],
+            "1.3333": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.5": [
+              0,
+              0,
+              0
+            ],
+            "0.9167": [
+              0,
+              -0.8,
+              0
+            ],
+            "1.3333": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": {
+            "0.0": [
+              1,
+              1,
+              1
+            ],
+            "0.5": [
+              1,
+              1,
+              1
+            ],
+            "0.9167": [
+              1,
+              0.71,
+              1
+            ],
+            "1.3333": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "eyex": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.5": [
+              0,
+              0,
+              0
+            ],
+            "0.9167": [
+              0,
+              0,
+              0
+            ],
+            "1.3333": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.0": [
+              0,
+              0.3,
+              0
+            ],
+            "0.5": [
+              0,
+              0.3,
+              0
+            ],
+            "0.9167": [
+              0,
+              0,
+              0
+            ],
+            "1.3333": [
+              0,
+              0.3,
+              0
+            ]
+          },
+          "scale": {
+            "0.0": [
+              1,
+              0.08,
+              1
+            ],
+            "0.5": [
+              1,
+              0.08,
+              1
+            ],
+            "0.9167": [
+              1,
+              1,
+              1
+            ],
+            "1.3333": [
+              1,
+              0.08,
+              1
+            ]
+          }
+        }
+      }
+    },
+    "animation.hair_black.wave_physics": {
+      "loop": true,
+      "animation_length": 6,
+      "bones": {
+        "hair_black": {
+          "rotation": [
+            "-v.headPitch + (-math.clamp(math.lerp(0, -55, query.cape_flap_amount) - (13 * query.modified_move_speed), -70, 0))",
+            0,
+            "v.hairYawPhysics * 0.12"
+          ]
+        },
+        "hair_black2": {
+          "rotation": [
+            "math.clamp(query.cape_flap_amount, 0, 0.55) * math.cos(0 - query.modified_distance_moved * 18) * 4.5",
+            0,
+            "v.hairYawPhysics * 0.30"
+          ]
+        },
+        "hair_black3": {
+          "rotation": [
+            "math.clamp(query.cape_flap_amount, 0, 0.55) * math.cos(12 - query.modified_distance_moved * 18) * 5.5",
+            0,
+            "v.hairYawPhysics * 0.40"
+          ]
+        },
+        "hair_black4": {
+          "rotation": [
+            "math.clamp(query.cape_flap_amount, 0, 0.55) * math.cos(24 - query.modified_distance_moved * 18) * 6.5",
+            0,
+            "v.hairYawPhysics * 0.50"
+          ]
+        },
+        "hair_black5": {
+          "rotation": [
+            "math.clamp(query.cape_flap_amount, 0, 0.55) * math.cos(36 - query.modified_distance_moved * 18) * 7.5",
+            0,
+            "v.hairYawPhysics * 0.60"
+          ]
+        },
+        "hair_black6": {
+          "rotation": [
+            "math.clamp(query.cape_flap_amount, 0, 0.55) * math.cos(48 - query.modified_distance_moved * 18) * 8.5",
+            0,
+            "v.hairYawPhysics * 0.70"
+          ]
+        },
+        "hair_black7": {
+          "rotation": [
+            "math.clamp(query.cape_flap_amount, 0, 0.55) * math.cos(60 - query.modified_distance_moved * 18) * 9.5",
+            0,
+            "v.hairYawPhysics * 0.80"
+          ]
+        },
+        "hair_black8": {
+          "rotation": [
+            "math.clamp(query.cape_flap_amount, 0, 0.55) * math.cos(72 - query.modified_distance_moved * 18) * 10.5",
+            0,
+            "v.hairYawPhysics * 0.90"
+          ]
+        },
+        "hair_black9": {
+          "rotation": [
+            "math.clamp(query.cape_flap_amount, 0, 0.55) * math.cos(84 - query.modified_distance_moved * 18) * 11.5",
+            0,
+            "v.hairYawPhysics * 1.00"
+          ]
+        }
+      }
+    },
+    "animation.hair_black.yaw_physics": {
+      "loop": true,
+      "bones": {
+        "hair_black": {
+          "rotation": [
+            0,
+            0,
+            "v.hairYawPhysics * 0.20"
+          ]
+        },
+        "hair_black2": {
+          "rotation": [
+            0,
+            0,
+            "v.hairYawPhysics * 0.30"
+          ]
+        },
+        "hair_black3": {
+          "rotation": [
+            0,
+            0,
+            "v.hairYawPhysics * 0.40"
+          ]
+        },
+        "hair_black4": {
+          "rotation": [
+            0,
+            0,
+            "v.hairYawPhysics * 0.50"
+          ]
+        },
+        "hair_black5": {
+          "rotation": [
+            0,
+            0,
+            "v.hairYawPhysics * 0.60"
+          ]
+        },
+        "hair_black6": {
+          "rotation": [
+            0,
+            0,
+            "v.hairYawPhysics * 0.70"
+          ]
+        },
+        "hair_black7": {
+          "rotation": [
+            0,
+            0,
+            "v.hairYawPhysics * 0.80"
+          ]
+        },
+        "hair_black8": {
+          "rotation": [
+            0,
+            0,
+            "v.hairYawPhysics * 0.90"
+          ]
+        },
+        "hair_black9": {
+          "rotation": [
+            0,
+            0,
+            "v.hairYawPhysics * 1.00"
+          ]
+        }
+      }
+    },
+    "animation.Bright.head.rotation": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            0,
+            "variable.z",
+            "-variable.rot"
+          ]
+        }
+      }
+    },
+    "animation.Bright.head.smooth": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "v.BrightSmoothHeadX * 0.4",
+            "v.BrightSmoothHeadY * 0.4",
+            "v.BrightSmoothHeadZ * 0.4"
+          ]
+        }
+      }
+    }
+  }
+}
