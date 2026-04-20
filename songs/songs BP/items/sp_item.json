@@ -1,0 +1,23 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "custom:sound_player",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "sp"
+			},
+			"minecraft:display_name": {
+				"value": "เครื่องเล่นเสียงพกพา"
+			},
+			"minecraft:use_animation": "brush",
+			"minecraft:use_modifiers": {
+				"use_duration": 32
+			}
+		}
+	}
+}

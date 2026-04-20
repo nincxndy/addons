@@ -1,0 +1,76 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "songs by nincandy",
+		"name": "songs",
+		"uuid": "273ebe37-1c29-4941-bcc6-979e8dd6d134",
+		"version": [
+			0,
+			0,
+			1
+		],
+		"min_engine_version": [
+			1,
+			17,
+			0
+		]
+	},
+	"modules": [
+		{
+			"description": "Script Module",
+			"type": "script",
+			"uuid": "6038165b-7690-449e-967a-f97576a4729d",
+			"version": [
+				0,
+				0,
+				1
+			],
+			"entry": "scripts/main.js"
+		},
+		{
+			"description": "Data Module",
+			"type": "data",
+			"uuid": "8e72d058-809e-47b5-947a-a7d992421e8b",
+			"version": [
+				0,
+				0,
+				1
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "2796db32-2675-4c0a-a2cb-3d6fbb01f37b",
+			"version": [
+				0,
+				0,
+				1
+			]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.7.0"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "1.1.0"
+		}
+	],
+	"metadata": {
+		"authors": [
+			"nincandy"
+		],
+		"generated_with": {
+			"MAM": [
+				"3.7.6"
+			],
+			"bridge": [
+				"2.7.54"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		},
+		"url": "https://addonsmaker.com/"
+	}
+}

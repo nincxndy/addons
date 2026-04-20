@@ -1,0 +1,57 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "songstttttttt by nincandy",
+		"name": "songs",
+		"uuid": "2796db32-2675-4c0a-a2cb-3d6fbb01f37b",
+		"version": [
+			0,
+			0,
+			1
+		],
+		"min_engine_version": [
+			1,
+			17,
+			0
+		]
+	},
+	"modules": [
+		{
+			"description": "songstttttttt by nincandy",
+			"type": "resources",
+			"uuid": "42ca4583-5f75-402a-b6c7-98390ad7219d",
+			"version": [
+				0,
+				0,
+				1
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "273ebe37-1c29-4941-bcc6-979e8dd6d134",
+			"version": [
+				0,
+				0,
+				1
+			]
+		}
+	],
+	"metadata": {
+		"authors": [
+			"nincandy"
+		],
+		"generated_with": {
+			"MAM": [
+				"3.7.6"
+			],
+			"bridge": [
+				"2.7.54"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		},
+		"url": "https://addonsmaker.com/"
+	}
+}
